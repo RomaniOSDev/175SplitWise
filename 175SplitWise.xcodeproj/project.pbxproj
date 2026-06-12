@@ -3,33 +3,129 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		30328EE22FDC99E000696F7B /* SplitDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E972FDC99E000696F7B /* SplitDesignSystem.swift */; };
+		30328EE32FDC99E000696F7B /* SplitVisualEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E982FDC99E000696F7B /* SplitVisualEffects.swift */; };
+		30328EE42FDC99E000696F7B /* HomeWidgetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9A2FDC99E000696F7B /* HomeWidgetCard.swift */; };
+		30328EE52FDC99E000696F7B /* RecentActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9B2FDC99E000696F7B /* RecentActivityCell.swift */; };
+		30328EE62FDC99E000696F7B /* BalanceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9D2FDC99E000696F7B /* BalanceRow.swift */; };
+		30328EE72FDC99E000696F7B /* BudgetProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9E2FDC99E000696F7B /* BudgetProgressView.swift */; };
+		30328EE82FDC99E000696F7B /* ExpenseFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9F2FDC99E000696F7B /* ExpenseFilterBar.swift */; };
+		30328EE92FDC99E000696F7B /* ExpenseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA02FDC99E000696F7B /* ExpenseRow.swift */; };
+		30328EEA2FDC99E000696F7B /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA12FDC99E000696F7B /* GroupCard.swift */; };
+		30328EEB2FDC99E000696F7B /* GroupComparisonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA22FDC99E000696F7B /* GroupComparisonRow.swift */; };
+		30328EEC2FDC99E000696F7B /* GroupHeroHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA32FDC99E000696F7B /* GroupHeroHeader.swift */; };
+		30328EED2FDC99E000696F7B /* MemberStatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA42FDC99E000696F7B /* MemberStatRow.swift */; };
+		30328EEE2FDC99E000696F7B /* SettingsRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA52FDC99E000696F7B /* SettingsRowCell.swift */; };
+		30328EEF2FDC99E000696F7B /* SettlementCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA62FDC99E000696F7B /* SettlementCard.swift */; };
+		30328EF02FDC99E000696F7B /* SettlementHistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA72FDC99E000696F7B /* SettlementHistoryRow.swift */; };
+		30328EF12FDC99E000696F7B /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EA82FDC99E000696F7B /* StatCard.swift */; };
+		30328EF22FDC99E000696F7B /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EAA2FDC99E000696F7B /* AppLink.swift */; };
+		30328EF32FDC99E000696F7B /* Color+SplitWise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EAC2FDC99E000696F7B /* Color+SplitWise.swift */; };
+		30328EF42FDC99E000696F7B /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EAE2FDC99E000696F7B /* CurrencyConverter.swift */; };
+		30328EF52FDC99E000696F7B /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EAF2FDC99E000696F7B /* CurrencyFormatter.swift */; };
+		30328EF62FDC99E000696F7B /* ExportReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB02FDC99E000696F7B /* ExportReportBuilder.swift */; };
+		30328EF72FDC99E000696F7B /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB12FDC99E000696F7B /* ShareSheet.swift */; };
+		30328EF82FDC99E000696F7B /* SplitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB22FDC99E000696F7B /* SplitCalculator.swift */; };
+		30328EF92FDC99E000696F7B /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB42FDC99E000696F7B /* Balance.swift */; };
+		30328EFA2FDC99E000696F7B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB52FDC99E000696F7B /* Currency.swift */; };
+		30328EFB2FDC99E000696F7B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB62FDC99E000696F7B /* Expense.swift */; };
+		30328EFC2FDC99E000696F7B /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB72FDC99E000696F7B /* ExpenseCategory.swift */; };
+		30328EFD2FDC99E000696F7B /* ExpenseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB82FDC99E000696F7B /* ExpenseFilter.swift */; };
+		30328EFE2FDC99E000696F7B /* ExpenseTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EB92FDC99E000696F7B /* ExpenseTemplate.swift */; };
+		30328EFF2FDC99E000696F7B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBA2FDC99E000696F7B /* Member.swift */; };
+		30328F002FDC99E000696F7B /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBB2FDC99E000696F7B /* OnboardingPage.swift */; };
+		30328F012FDC99E000696F7B /* Settlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBC2FDC99E000696F7B /* Settlement.swift */; };
+		30328F022FDC99E000696F7B /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBD2FDC99E000696F7B /* Split.swift */; };
+		30328F032FDC99E000696F7B /* SplitGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBE2FDC99E000696F7B /* SplitGroup.swift */; };
+		30328F042FDC99E000696F7B /* SplitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EBF2FDC99E000696F7B /* SplitType.swift */; };
+		30328F052FDC99E000696F7B /* SplitWiseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC12FDC99E000696F7B /* SplitWiseViewModel.swift */; };
+		30328F062FDC99E000696F7B /* ExpenseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC32FDC99E000696F7B /* ExpenseFormView.swift */; };
+		30328F072FDC99E000696F7B /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC52FDC99E000696F7B /* GroupDetailView.swift */; };
+		30328F082FDC99E000696F7B /* GroupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC62FDC99E000696F7B /* GroupFormView.swift */; };
+		30328F092FDC99E000696F7B /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC72FDC99E000696F7B /* GroupsView.swift */; };
+		30328F0A2FDC99E000696F7B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EC92FDC99E000696F7B /* HomeView.swift */; };
+		30328F0B2FDC99E000696F7B /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ECB2FDC99E000696F7B /* OnboardingPageView.swift */; };
+		30328F0C2FDC99E000696F7B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ECC2FDC99E000696F7B /* OnboardingView.swift */; };
+		30328F0D2FDC99E000696F7B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ECE2FDC99E000696F7B /* SettingsView.swift */; };
+		30328F0E2FDC99E000696F7B /* TemplatesManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ECF2FDC99E000696F7B /* TemplatesManageView.swift */; };
+		30328F0F2FDC99E000696F7B /* SettleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ED12FDC99E000696F7B /* SettleView.swift */; };
+		30328F102FDC99E000696F7B /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ED32FDC99E000696F7B /* StatsView.swift */; };
+		30328F112FDC99E000696F7B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ED52FDC99E000696F7B /* MainTabView.swift */; };
+		30328F122FDC99E000696F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ED72FDC99E000696F7B /* AppDelegate.swift */; };
+		30328F132FDC99E000696F7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328ED92FDC99E000696F7B /* ContentView.swift */; };
+		30328F142FDC99E000696F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EDF2FDC99E000696F7B /* SceneDelegate.swift */; };
+		30328F152FDC99E000696F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328EE02FDC99E000696F7B /* ViewController.swift */; };
+		30328F162FDC99E000696F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30328ED82FDC99E000696F7B /* Assets.xcassets */; };
+		30328F182FDC99E000696F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30328EDC2FDC99E000696F7B /* LaunchScreen.storyboard */; };
+		30328F192FDC99E000696F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30328EDE2FDC99E000696F7B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1A1E5D210905CE408C732137 /* Pods-175SplitWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-175SplitWise.release.xcconfig"; path = "Target Support Files/Pods-175SplitWise/Pods-175SplitWise.release.xcconfig"; sourceTree = "<group>"; };
+		30328E972FDC99E000696F7B /* SplitDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitDesignSystem.swift; sourceTree = "<group>"; };
+		30328E982FDC99E000696F7B /* SplitVisualEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVisualEffects.swift; sourceTree = "<group>"; };
+		30328E9A2FDC99E000696F7B /* HomeWidgetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWidgetCard.swift; sourceTree = "<group>"; };
+		30328E9B2FDC99E000696F7B /* RecentActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityCell.swift; sourceTree = "<group>"; };
+		30328E9D2FDC99E000696F7B /* BalanceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRow.swift; sourceTree = "<group>"; };
+		30328E9E2FDC99E000696F7B /* BudgetProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetProgressView.swift; sourceTree = "<group>"; };
+		30328E9F2FDC99E000696F7B /* ExpenseFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilterBar.swift; sourceTree = "<group>"; };
+		30328EA02FDC99E000696F7B /* ExpenseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRow.swift; sourceTree = "<group>"; };
+		30328EA12FDC99E000696F7B /* GroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
+		30328EA22FDC99E000696F7B /* GroupComparisonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupComparisonRow.swift; sourceTree = "<group>"; };
+		30328EA32FDC99E000696F7B /* GroupHeroHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeroHeader.swift; sourceTree = "<group>"; };
+		30328EA42FDC99E000696F7B /* MemberStatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberStatRow.swift; sourceTree = "<group>"; };
+		30328EA52FDC99E000696F7B /* SettingsRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowCell.swift; sourceTree = "<group>"; };
+		30328EA62FDC99E000696F7B /* SettlementCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementCard.swift; sourceTree = "<group>"; };
+		30328EA72FDC99E000696F7B /* SettlementHistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementHistoryRow.swift; sourceTree = "<group>"; };
+		30328EA82FDC99E000696F7B /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		30328EAA2FDC99E000696F7B /* AppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLink.swift; sourceTree = "<group>"; };
+		30328EAC2FDC99E000696F7B /* Color+SplitWise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SplitWise.swift"; sourceTree = "<group>"; };
+		30328EAE2FDC99E000696F7B /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		30328EAF2FDC99E000696F7B /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		30328EB02FDC99E000696F7B /* ExportReportBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportReportBuilder.swift; sourceTree = "<group>"; };
+		30328EB12FDC99E000696F7B /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		30328EB22FDC99E000696F7B /* SplitCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCalculator.swift; sourceTree = "<group>"; };
+		30328EB42FDC99E000696F7B /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		30328EB52FDC99E000696F7B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		30328EB62FDC99E000696F7B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		30328EB72FDC99E000696F7B /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		30328EB82FDC99E000696F7B /* ExpenseFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFilter.swift; sourceTree = "<group>"; };
+		30328EB92FDC99E000696F7B /* ExpenseTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTemplate.swift; sourceTree = "<group>"; };
+		30328EBA2FDC99E000696F7B /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		30328EBB2FDC99E000696F7B /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		30328EBC2FDC99E000696F7B /* Settlement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settlement.swift; sourceTree = "<group>"; };
+		30328EBD2FDC99E000696F7B /* Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
+		30328EBE2FDC99E000696F7B /* SplitGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitGroup.swift; sourceTree = "<group>"; };
+		30328EBF2FDC99E000696F7B /* SplitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitType.swift; sourceTree = "<group>"; };
+		30328EC12FDC99E000696F7B /* SplitWiseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitWiseViewModel.swift; sourceTree = "<group>"; };
+		30328EC32FDC99E000696F7B /* ExpenseFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFormView.swift; sourceTree = "<group>"; };
+		30328EC52FDC99E000696F7B /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		30328EC62FDC99E000696F7B /* GroupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFormView.swift; sourceTree = "<group>"; };
+		30328EC72FDC99E000696F7B /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		30328EC92FDC99E000696F7B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		30328ECB2FDC99E000696F7B /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		30328ECC2FDC99E000696F7B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		30328ECE2FDC99E000696F7B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		30328ECF2FDC99E000696F7B /* TemplatesManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesManageView.swift; sourceTree = "<group>"; };
+		30328ED12FDC99E000696F7B /* SettleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleView.swift; sourceTree = "<group>"; };
+		30328ED32FDC99E000696F7B /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		30328ED52FDC99E000696F7B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		30328ED72FDC99E000696F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30328ED82FDC99E000696F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30328ED92FDC99E000696F7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30328EDA2FDC99E000696F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30328EDB2FDC99E000696F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30328EDD2FDC99E000696F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30328EDF2FDC99E000696F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		30328EE02FDC99E000696F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		303539E32FC77F540062964D /* 175SplitWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 175SplitWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9701FB77A1673FBDE25ADFD1 /* Pods-175SplitWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-175SplitWise.debug.xcconfig"; path = "Target Support Files/Pods-175SplitWise/Pods-175SplitWise.debug.xcconfig"; sourceTree = "<group>"; };
+		F9C4E337F7CDC587AD5D5304 /* Pods_175SplitWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_175SplitWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		303539F52FC77F550062964D /* Exceptions for "175SplitWise" folder in "175SplitWise" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 303539E22FC77F540062964D /* 175SplitWise */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		303539E52FC77F540062964D /* 175SplitWise */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				303539F52FC77F550062964D /* Exceptions for "175SplitWise" folder in "175SplitWise" target */,
-			);
-			path = 175SplitWise;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		303539E02FC77F540062964D /* Frameworks */ = {
@@ -42,11 +138,204 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30328E992FDC99E000696F7B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				30328E972FDC99E000696F7B /* SplitDesignSystem.swift */,
+				30328E982FDC99E000696F7B /* SplitVisualEffects.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		30328E9C2FDC99E000696F7B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30328E9A2FDC99E000696F7B /* HomeWidgetCard.swift */,
+				30328E9B2FDC99E000696F7B /* RecentActivityCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30328EA92FDC99E000696F7B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				30328E992FDC99E000696F7B /* Design */,
+				30328E9C2FDC99E000696F7B /* Home */,
+				30328E9D2FDC99E000696F7B /* BalanceRow.swift */,
+				30328E9E2FDC99E000696F7B /* BudgetProgressView.swift */,
+				30328E9F2FDC99E000696F7B /* ExpenseFilterBar.swift */,
+				30328EA02FDC99E000696F7B /* ExpenseRow.swift */,
+				30328EA12FDC99E000696F7B /* GroupCard.swift */,
+				30328EA22FDC99E000696F7B /* GroupComparisonRow.swift */,
+				30328EA32FDC99E000696F7B /* GroupHeroHeader.swift */,
+				30328EA42FDC99E000696F7B /* MemberStatRow.swift */,
+				30328EA52FDC99E000696F7B /* SettingsRowCell.swift */,
+				30328EA62FDC99E000696F7B /* SettlementCard.swift */,
+				30328EA72FDC99E000696F7B /* SettlementHistoryRow.swift */,
+				30328EA82FDC99E000696F7B /* StatCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		30328EAB2FDC99E000696F7B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				30328EAA2FDC99E000696F7B /* AppLink.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		30328EAD2FDC99E000696F7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30328EAC2FDC99E000696F7B /* Color+SplitWise.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30328EB32FDC99E000696F7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30328EAE2FDC99E000696F7B /* CurrencyConverter.swift */,
+				30328EAF2FDC99E000696F7B /* CurrencyFormatter.swift */,
+				30328EB02FDC99E000696F7B /* ExportReportBuilder.swift */,
+				30328EB12FDC99E000696F7B /* ShareSheet.swift */,
+				30328EB22FDC99E000696F7B /* SplitCalculator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30328EC02FDC99E000696F7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30328EB42FDC99E000696F7B /* Balance.swift */,
+				30328EB52FDC99E000696F7B /* Currency.swift */,
+				30328EB62FDC99E000696F7B /* Expense.swift */,
+				30328EB72FDC99E000696F7B /* ExpenseCategory.swift */,
+				30328EB82FDC99E000696F7B /* ExpenseFilter.swift */,
+				30328EB92FDC99E000696F7B /* ExpenseTemplate.swift */,
+				30328EBA2FDC99E000696F7B /* Member.swift */,
+				30328EBB2FDC99E000696F7B /* OnboardingPage.swift */,
+				30328EBC2FDC99E000696F7B /* Settlement.swift */,
+				30328EBD2FDC99E000696F7B /* Split.swift */,
+				30328EBE2FDC99E000696F7B /* SplitGroup.swift */,
+				30328EBF2FDC99E000696F7B /* SplitType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30328EC22FDC99E000696F7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30328EC12FDC99E000696F7B /* SplitWiseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30328EC42FDC99E000696F7B /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				30328EC32FDC99E000696F7B /* ExpenseFormView.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		30328EC82FDC99E000696F7B /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				30328EC52FDC99E000696F7B /* GroupDetailView.swift */,
+				30328EC62FDC99E000696F7B /* GroupFormView.swift */,
+				30328EC72FDC99E000696F7B /* GroupsView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		30328ECA2FDC99E000696F7B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30328EC92FDC99E000696F7B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30328ECD2FDC99E000696F7B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				30328ECB2FDC99E000696F7B /* OnboardingPageView.swift */,
+				30328ECC2FDC99E000696F7B /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		30328ED02FDC99E000696F7B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				30328ECE2FDC99E000696F7B /* SettingsView.swift */,
+				30328ECF2FDC99E000696F7B /* TemplatesManageView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		30328ED22FDC99E000696F7B /* Settlements */ = {
+			isa = PBXGroup;
+			children = (
+				30328ED12FDC99E000696F7B /* SettleView.swift */,
+			);
+			path = Settlements;
+			sourceTree = "<group>";
+		};
+		30328ED42FDC99E000696F7B /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				30328ED32FDC99E000696F7B /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		30328ED62FDC99E000696F7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30328EC42FDC99E000696F7B /* Expenses */,
+				30328EC82FDC99E000696F7B /* Groups */,
+				30328ECA2FDC99E000696F7B /* Home */,
+				30328ECD2FDC99E000696F7B /* Onboarding */,
+				30328ED02FDC99E000696F7B /* Settings */,
+				30328ED22FDC99E000696F7B /* Settlements */,
+				30328ED42FDC99E000696F7B /* Stats */,
+				30328ED52FDC99E000696F7B /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30328EE12FDC99E000696F7B /* 175SplitWise */ = {
+			isa = PBXGroup;
+			children = (
+				30328EA92FDC99E000696F7B /* Components */,
+				30328EAB2FDC99E000696F7B /* Constants */,
+				30328EAD2FDC99E000696F7B /* Extensions */,
+				30328EB32FDC99E000696F7B /* Helpers */,
+				30328EC02FDC99E000696F7B /* Models */,
+				30328EC22FDC99E000696F7B /* ViewModels */,
+				30328ED62FDC99E000696F7B /* Views */,
+				30328ED72FDC99E000696F7B /* AppDelegate.swift */,
+				30328ED82FDC99E000696F7B /* Assets.xcassets */,
+				30328ED92FDC99E000696F7B /* ContentView.swift */,
+				30328EDA2FDC99E000696F7B /* Info.plist */,
+				30328EDC2FDC99E000696F7B /* LaunchScreen.storyboard */,
+				30328EDE2FDC99E000696F7B /* Main.storyboard */,
+				30328EDF2FDC99E000696F7B /* SceneDelegate.swift */,
+				30328EE02FDC99E000696F7B /* ViewController.swift */,
+			);
+			path = 175SplitWise;
+			sourceTree = "<group>";
+		};
 		303539DA2FC77F540062964D = {
 			isa = PBXGroup;
 			children = (
-				303539E52FC77F540062964D /* 175SplitWise */,
+				30328EE12FDC99E000696F7B /* 175SplitWise */,
 				303539E42FC77F540062964D /* Products */,
+				B8D2418C7F48FD3799F081D7 /* Pods */,
+				5352611BD3B7D029B519A6D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +347,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5352611BD3B7D029B519A6D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9C4E337F7CDC587AD5D5304 /* Pods_175SplitWise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D2418C7F48FD3799F081D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9701FB77A1673FBDE25ADFD1 /* Pods-175SplitWise.debug.xcconfig */,
+				1A1E5D210905CE408C732137 /* Pods-175SplitWise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303539F62FC77F550062964D /* Build configuration list for PBXNativeTarget "175SplitWise" */;
 			buildPhases = (
+				E1A1C08053A2F67F80F8FD27 /* [CP] Check Pods Manifest.lock */,
 				303539DF2FC77F540062964D /* Sources */,
 				303539E02FC77F540062964D /* Frameworks */,
 				303539E12FC77F540062964D /* Resources */,
@@ -73,12 +380,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				303539E52FC77F540062964D /* 175SplitWise */,
-			);
 			name = 175SplitWise;
-			packageProductDependencies = (
-			);
 			productName = 175SplitWise;
 			productReference = 303539E32FC77F540062964D /* 175SplitWise.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +401,7 @@
 				};
 			};
 			buildConfigurationList = 303539DE2FC77F540062964D /* Build configuration list for PBXProject "175SplitWise" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +409,6 @@
 				Base,
 			);
 			mainGroup = 303539DA2FC77F540062964D;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 303539E42FC77F540062964D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +423,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30328F162FDC99E000696F7B /* Assets.xcassets in Resources */,
+				30328F182FDC99E000696F7B /* LaunchScreen.storyboard in Resources */,
+				30328F192FDC99E000696F7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1A1C08053A2F67F80F8FD27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-175SplitWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		303539DF2FC77F540062964D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30328EE22FDC99E000696F7B /* SplitDesignSystem.swift in Sources */,
+				30328EE32FDC99E000696F7B /* SplitVisualEffects.swift in Sources */,
+				30328EE42FDC99E000696F7B /* HomeWidgetCard.swift in Sources */,
+				30328EE52FDC99E000696F7B /* RecentActivityCell.swift in Sources */,
+				30328EE62FDC99E000696F7B /* BalanceRow.swift in Sources */,
+				30328EE72FDC99E000696F7B /* BudgetProgressView.swift in Sources */,
+				30328EE82FDC99E000696F7B /* ExpenseFilterBar.swift in Sources */,
+				30328EE92FDC99E000696F7B /* ExpenseRow.swift in Sources */,
+				30328EEA2FDC99E000696F7B /* GroupCard.swift in Sources */,
+				30328EEB2FDC99E000696F7B /* GroupComparisonRow.swift in Sources */,
+				30328EEC2FDC99E000696F7B /* GroupHeroHeader.swift in Sources */,
+				30328EED2FDC99E000696F7B /* MemberStatRow.swift in Sources */,
+				30328EEE2FDC99E000696F7B /* SettingsRowCell.swift in Sources */,
+				30328EEF2FDC99E000696F7B /* SettlementCard.swift in Sources */,
+				30328EF02FDC99E000696F7B /* SettlementHistoryRow.swift in Sources */,
+				30328EF12FDC99E000696F7B /* StatCard.swift in Sources */,
+				30328EF22FDC99E000696F7B /* AppLink.swift in Sources */,
+				30328EF32FDC99E000696F7B /* Color+SplitWise.swift in Sources */,
+				30328EF42FDC99E000696F7B /* CurrencyConverter.swift in Sources */,
+				30328EF52FDC99E000696F7B /* CurrencyFormatter.swift in Sources */,
+				30328EF62FDC99E000696F7B /* ExportReportBuilder.swift in Sources */,
+				30328EF72FDC99E000696F7B /* ShareSheet.swift in Sources */,
+				30328EF82FDC99E000696F7B /* SplitCalculator.swift in Sources */,
+				30328EF92FDC99E000696F7B /* Balance.swift in Sources */,
+				30328EFA2FDC99E000696F7B /* Currency.swift in Sources */,
+				30328EFB2FDC99E000696F7B /* Expense.swift in Sources */,
+				30328EFC2FDC99E000696F7B /* ExpenseCategory.swift in Sources */,
+				30328EFD2FDC99E000696F7B /* ExpenseFilter.swift in Sources */,
+				30328EFE2FDC99E000696F7B /* ExpenseTemplate.swift in Sources */,
+				30328EFF2FDC99E000696F7B /* Member.swift in Sources */,
+				30328F002FDC99E000696F7B /* OnboardingPage.swift in Sources */,
+				30328F012FDC99E000696F7B /* Settlement.swift in Sources */,
+				30328F022FDC99E000696F7B /* Split.swift in Sources */,
+				30328F032FDC99E000696F7B /* SplitGroup.swift in Sources */,
+				30328F042FDC99E000696F7B /* SplitType.swift in Sources */,
+				30328F052FDC99E000696F7B /* SplitWiseViewModel.swift in Sources */,
+				30328F062FDC99E000696F7B /* ExpenseFormView.swift in Sources */,
+				30328F072FDC99E000696F7B /* GroupDetailView.swift in Sources */,
+				30328F082FDC99E000696F7B /* GroupFormView.swift in Sources */,
+				30328F092FDC99E000696F7B /* GroupsView.swift in Sources */,
+				30328F0A2FDC99E000696F7B /* HomeView.swift in Sources */,
+				30328F0B2FDC99E000696F7B /* OnboardingPageView.swift in Sources */,
+				30328F0C2FDC99E000696F7B /* OnboardingView.swift in Sources */,
+				30328F0D2FDC99E000696F7B /* SettingsView.swift in Sources */,
+				30328F0E2FDC99E000696F7B /* TemplatesManageView.swift in Sources */,
+				30328F0F2FDC99E000696F7B /* SettleView.swift in Sources */,
+				30328F102FDC99E000696F7B /* StatsView.swift in Sources */,
+				30328F112FDC99E000696F7B /* MainTabView.swift in Sources */,
+				30328F122FDC99E000696F7B /* AppDelegate.swift in Sources */,
+				30328F132FDC99E000696F7B /* ContentView.swift in Sources */,
+				30328F142FDC99E000696F7B /* SceneDelegate.swift in Sources */,
+				30328F152FDC99E000696F7B /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		30328EDC2FDC99E000696F7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30328EDB2FDC99E000696F7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		30328EDE2FDC99E000696F7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30328EDD2FDC99E000696F7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		303539F72FC77F550062964D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9701FB77A1673FBDE25ADFD1 /* Pods-175SplitWise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -147,30 +548,37 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 175SplitWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PoolBudgetSync;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-75SplitWise";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mat.p00lb7dg3ts8nc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		303539F82FC77F550062964D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1E5D210905CE408C732137 /* Pods-175SplitWise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,25 +586,31 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 175SplitWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PoolBudgetSync;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-75SplitWise";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mat.p00lb7dg3ts8nc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
