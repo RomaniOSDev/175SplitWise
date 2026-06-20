@@ -129,6 +129,7 @@ struct WebDocumentHostRepresentable: UIViewRepresentable {
 
         func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
             if let httpResponse = navigationResponse.response as? HTTPURLResponse {
+                print("[LaunchFlow] Server response code: \(httpResponse.statusCode)")
                 if LaunchSessionStore.shared.savedLastURL == nil && !failureCalled {
                     if (400...599).contains(httpResponse.statusCode) {
                         failureCalled = true

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3022EBCE2FE6D6D700847CF8 /* RootWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCB2FE6D6D700847CF8 /* RootWindowPresenter.swift */; };
-		3022EBCF2FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */; };
 		3022EBD02FE6D6D700847CF8 /* LaunchFlowSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */; };
 		3022EBD12FE6D6D700847CF8 /* LaunchDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */; };
 		3022EBD22FE6D6D700847CF8 /* LaunchStagingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC82FE6D6D700847CF8 /* LaunchStagingState.swift */; };
@@ -18,7 +17,6 @@
 		3022EBD62FE6D6D700847CF8 /* RemoteEntryURLComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCA2FE6D6D700847CF8 /* RemoteEntryURLComposer.swift */; };
 		3022EBD72FE6D6D700847CF8 /* WebDocumentSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCC2FE6D6D700847CF8 /* WebDocumentSurfaceView.swift */; };
 		3022EBD82FE6D6D700847CF8 /* RemoteEntryProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC92FE6D6D700847CF8 /* RemoteEntryProbe.swift */; };
-		3022EBD92FE6D6D700847CF8 /* LaunchFlowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */; };
 		3022EBDA2FE6D6D700847CF8 /* DeferredLaunchCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */; };
 		30328EE22FDC99E000696F7B /* SplitDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E972FDC99E000696F7B /* SplitDesignSystem.swift */; };
 		30328EE32FDC99E000696F7B /* SplitVisualEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E982FDC99E000696F7B /* SplitVisualEffects.swift */; };
@@ -82,8 +80,6 @@
 		3022EBC02FE6D6D700847CF8 /* CalendarGateEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGateEvaluator.swift; sourceTree = "<group>"; };
 		3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredLaunchCanvas.swift; sourceTree = "<group>"; };
 		3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDestination.swift; sourceTree = "<group>"; };
-		3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowDebugOptions.swift; sourceTree = "<group>"; };
-		3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowLogger.swift; sourceTree = "<group>"; };
 		3022EBC52FE6D6D700847CF8 /* LaunchFlowResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowResolver.swift; sourceTree = "<group>"; };
 		3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowSecrets.swift; sourceTree = "<group>"; };
 		3022EBC72FE6D6D700847CF8 /* LaunchSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSessionStore.swift; sourceTree = "<group>"; };
@@ -170,8 +166,6 @@
 				3022EBC02FE6D6D700847CF8 /* CalendarGateEvaluator.swift */,
 				3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */,
 				3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */,
-				3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */,
-				3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */,
 				3022EBC52FE6D6D700847CF8 /* LaunchFlowResolver.swift */,
 				3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */,
 				3022EBC72FE6D6D700847CF8 /* LaunchSessionStore.swift */,
@@ -544,7 +538,6 @@
 				30328F032FDC99E000696F7B /* SplitGroup.swift in Sources */,
 				30328F042FDC99E000696F7B /* SplitType.swift in Sources */,
 				3022EBCE2FE6D6D700847CF8 /* RootWindowPresenter.swift in Sources */,
-				3022EBCF2FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift in Sources */,
 				3022EBD02FE6D6D700847CF8 /* LaunchFlowSecrets.swift in Sources */,
 				3022EBD12FE6D6D700847CF8 /* LaunchDestination.swift in Sources */,
 				3022EBD22FE6D6D700847CF8 /* LaunchStagingState.swift in Sources */,
@@ -554,7 +547,6 @@
 				3022EBD62FE6D6D700847CF8 /* RemoteEntryURLComposer.swift in Sources */,
 				3022EBD72FE6D6D700847CF8 /* WebDocumentSurfaceView.swift in Sources */,
 				3022EBD82FE6D6D700847CF8 /* RemoteEntryProbe.swift in Sources */,
-				3022EBD92FE6D6D700847CF8 /* LaunchFlowLogger.swift in Sources */,
 				3022EBDA2FE6D6D700847CF8 /* DeferredLaunchCanvas.swift in Sources */,
 				30328F052FDC99E000696F7B /* SplitWiseViewModel.swift in Sources */,
 				30328F062FDC99E000696F7B /* ExpenseFormView.swift in Sources */,
@@ -605,7 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 175SplitWise/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PoolBudgetSync;
@@ -643,7 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 175SplitWise/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PoolBudgetSync;

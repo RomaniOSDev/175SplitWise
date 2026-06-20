@@ -19,6 +19,10 @@ final class LaunchFlowResolver {
 
     init(window: UIWindow?) {
         self.sessionStore = LaunchSessionStore.shared
+        self.sessionStore.resetIfFreshInstall()
+        if sessionStore.savedLastURL == nil {
+            sessionStore.hasShownNativeShell = false
+        }
         self.gateEvaluator = CalendarGateEvaluator()
         self.urlComposer = RemoteEntryURLComposer()
         self.windowPresenter = RootWindowPresenter(window: window)
@@ -26,7 +30,6 @@ final class LaunchFlowResolver {
 
     func resolveEntryViewController() -> UIViewController {
         let destination = resolveDestination()
-        LaunchFlowLogger.notice("Resolved destination: \(String(describing: destination))")
         return viewController(for: destination)
     }
 
@@ -34,33 +37,12 @@ final class LaunchFlowResolver {
         stagingProbeCancelled = true
         activeProbe?.cancel()
         activeProbe = nil
-        LaunchFlowLogger.debug("Cancelled pending launch probe")
     }
 
     // MARK: - Destination resolution
 
     func resolveDestination() -> LaunchDestination {
-        #if DEBUG
-        switch LaunchFlowDebugOptions.current {
-        case .forceNative:
-            LaunchFlowLogger.debug("DEBUG override: force native")
-            return .native
-        case .forceWeb:
-            LaunchFlowLogger.debug("DEBUG override: force web")
-            if let url = urlComposer.composedURL() ?? sessionStore.savedLastURL {
-                return .web(url)
-            }
-            return .native
-        case .forceStaging:
-            LaunchFlowLogger.debug("DEBUG override: force staging")
-            return .staging
-        case .automatic:
-            break
-        }
-        #endif
-
-        guard gateEvaluator.isGateOpen() else {
-            sessionStore.hasShownNativeShell = true
+        guard isRemoteFlowAllowed else {
             return .native
         }
 
@@ -86,16 +68,22 @@ final class LaunchFlowResolver {
         }
     }
 
+    private var isRemoteFlowAllowed: Bool {
+        gateEvaluator.isGateOpen()
+    }
+
     // MARK: - Hosts
 
     private func makeNativeHost() -> UIViewController {
-        sessionStore.hasShownNativeShell = true
         let host = UIHostingController(rootView: ContentView())
         host.modalPresentationStyle = .fullScreen
         return host
     }
 
     private func makeWebHost(url: URL) -> UIViewController {
+        guard isRemoteFlowAllowed else {
+            return makeNativeHost()
+        }
         let surface = WebDocumentSurfaceView(url: url) { [weak self] in
             self?.pivotToNative()
         }
@@ -105,6 +93,10 @@ final class LaunchFlowResolver {
     }
 
     private func makeStagingHost() -> UIViewController {
+        guard isRemoteFlowAllowed else {
+            return makeNativeHost()
+        }
+
         let state = LaunchStagingState()
         let host = UIHostingController(rootView: DeferredLaunchCanvas(state: state))
         host.modalPresentationStyle = .fullScreen
@@ -118,8 +110,11 @@ final class LaunchFlowResolver {
 
     private func runStagingProbe(state: LaunchStagingState) {
         guard !stagingProbeCancelled else { return }
+        guard isRemoteFlowAllowed else {
+            finishStaging(success: false, finalURL: nil)
+            return
+        }
         guard let entryURL = urlComposer.composedURL() else {
-            LaunchFlowLogger.debug("Invalid composed entry URL")
             finishStaging(success: false, finalURL: nil)
             return
         }
@@ -140,8 +135,11 @@ final class LaunchFlowResolver {
     }
 
     private func finishStaging(success: Bool, finalURL: URL?) {
+        guard isRemoteFlowAllowed else {
+            pivotToNative()
+            return
+        }
         guard success, let finalURL else {
-            sessionStore.hasShownNativeShell = true
             pivotToNative()
             return
         }
@@ -155,6 +153,10 @@ final class LaunchFlowResolver {
     }
 
     func pivotToWeb(url: URL) {
+        guard isRemoteFlowAllowed else {
+            pivotToNative()
+            return
+        }
         windowPresenter.slide(to: makeWebHost(url: url))
     }
 }

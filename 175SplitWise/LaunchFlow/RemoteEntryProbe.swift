@@ -13,7 +13,6 @@ final class RemoteEntryProbe {
     private let timeout: TimeInterval
     private let maxAttempts: Int
 
-    /// Extra request headers attached to every preflight attempt.
     private static let customHeaders: [String: String] = [
         "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
         "Accept-Language": Locale.preferredLanguages.first ?? "en",
@@ -70,21 +69,15 @@ final class RemoteEntryProbe {
         }
         request.setValue("Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) LaunchFlow", forHTTPHeaderField: "User-Agent")
 
-        let attemptIndex = maxAttempts - remainingAttempts + 1
-
         task = session.dataTask(with: request) { [weak self] _, response, error in
             guard let self else { return }
             self.task = nil
 
             if let error = error as NSError?, error.code == NSURLErrorCancelled {
-                self.logProbeResponse(entryURL: entryURL, attempt: attemptIndex, http: nil, error: error, cancelled: true)
-                LaunchFlowLogger.debug("Preflight cancelled")
                 return
             }
 
             if let error {
-                self.logProbeResponse(entryURL: entryURL, attempt: attemptIndex, http: response as? HTTPURLResponse, error: error)
-                LaunchFlowLogger.debug("Preflight error: \(error.localizedDescription)")
                 if remainingAttempts > 1 {
                     self.attempt(
                         entryURL: entryURL,
@@ -100,20 +93,17 @@ final class RemoteEntryProbe {
             }
 
             guard let http = response as? HTTPURLResponse else {
-                self.logProbeResponse(entryURL: entryURL, attempt: attemptIndex, http: nil, error: nil)
-                LaunchFlowLogger.debug("Preflight: no HTTP response")
                 completion(false, nil)
                 return
             }
 
-            self.logProbeResponse(entryURL: entryURL, attempt: attemptIndex, http: http, error: nil)
-            LaunchFlowLogger.debug("Preflight status: \(http.statusCode)")
+            print("[LaunchFlow] Server response code: \(http.statusCode)")
+
             onProgress?(0.85)
 
             let isOK = (200...299).contains(http.statusCode)
             if isOK {
                 let finalURL = http.url ?? entryURL
-                LaunchFlowLogger.debug("Preflight OK — final URL resolved")
                 onProgress?(1.0)
                 completion(true, finalURL)
             } else if remainingAttempts > 1 {
@@ -128,32 +118,6 @@ final class RemoteEntryProbe {
                 completion(false, nil)
             }
         }
-        print("[LaunchFlow] Probe start — attempt \(attemptIndex)/\(maxAttempts), GET \(entryURL.absoluteString)")
         task?.resume()
-    }
-
-    private func logProbeResponse(
-        entryURL: URL,
-        attempt: Int,
-        http: HTTPURLResponse?,
-        error: Error?,
-        cancelled: Bool = false
-    ) {
-        if cancelled {
-            print("[LaunchFlow] Probe cancelled — attempt \(attempt), url=\(entryURL.absoluteString)")
-            return
-        }
-        if let error {
-            let status = (http?.statusCode).map(String.init) ?? "—"
-            print("[LaunchFlow] Probe failed — attempt \(attempt), status=\(status), error=\(error.localizedDescription), url=\(entryURL.absoluteString)")
-            return
-        }
-        guard let http else {
-            print("[LaunchFlow] Probe failed — attempt \(attempt), no HTTP response, url=\(entryURL.absoluteString)")
-            return
-        }
-        let final = http.url?.absoluteString ?? entryURL.absoluteString
-        let ok = (200...299).contains(http.statusCode)
-        print("[LaunchFlow] Probe response — attempt \(attempt), status=\(http.statusCode), ok=\(ok), finalURL=\(final), requestURL=\(entryURL.absoluteString)")
     }
 }

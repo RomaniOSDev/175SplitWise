@@ -22,7 +22,7 @@ struct CalendarGateEvaluator {
     /// `true` when reference day is on or after the anchor day (gate open).
     func isGateOpen(referenceDate: Date = Date()) -> Bool {
         guard let anchorDay = parseStartOfDay(anchorDateString) else {
-            return true
+            return false
         }
         let referenceDay = startOfDay(referenceDate)
         return referenceDay >= anchorDay

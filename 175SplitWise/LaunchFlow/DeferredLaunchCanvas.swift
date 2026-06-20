@@ -71,9 +71,3 @@ struct DeferredLaunchCanvas: View {
         }
     }
 }
-
-#if DEBUG
-#Preview {
-    DeferredLaunchCanvas(state: LaunchStagingState())
-}
-#endif

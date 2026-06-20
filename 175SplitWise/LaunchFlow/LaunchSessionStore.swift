@@ -10,12 +10,30 @@ import Security
 final class LaunchSessionStore {
     static let shared = LaunchSessionStore()
 
+    private static let installMarkerKey = "launch_flow_install_marker"
+    private static let legacyNativeShellAccount = "didBootstrapShell"
+
     private let lastURLKey: String
     private let nativeShellKey: String
 
     private init() {
         self.lastURLKey = LaunchFlowSecrets.persistedNavigationURLKey
         self.nativeShellKey = LaunchFlowSecrets.nativeShellPresentedKey
+    }
+
+    /// UserDefaults is cleared on uninstall; Keychain is not. Reset stale launch-flow state on fresh install.
+    func resetIfFreshInstall() {
+        let defaults = UserDefaults.standard
+        guard !defaults.bool(forKey: Self.installMarkerKey) else { return }
+
+        clearAll()
+        defaults.set(true, forKey: Self.installMarkerKey)
+    }
+
+    func clearAll() {
+        savedLastURL = nil
+        hasShownNativeShell = false
+        KeychainVault.remove(Self.legacyNativeShellAccount)
     }
 
     /// Persisted document URL after first successful WebView load.

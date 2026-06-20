@@ -18,7 +18,7 @@ enum LaunchFlowSecrets {
     }
 
     static var nativeShellPresentedKey: String {
-        unfold([62, 51, 62, 24, 53, 53, 46, 41, 46, 40, 59, 42, 9, 50, 63, 54, 54], blend: 0x5A)
+        unfold([54, 59, 47, 52, 57, 50, 5, 60, 54, 53, 45, 5, 40, 63, 55, 53, 46, 63, 5, 56, 54, 53, 57, 49, 63, 62], blend: 0x5A)
     }
 
     static var remoteFlowEntryTemplate: String {
