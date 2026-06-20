@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3022EBCE2FE6D6D700847CF8 /* RootWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCB2FE6D6D700847CF8 /* RootWindowPresenter.swift */; };
+		3022EBCF2FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */; };
+		3022EBD02FE6D6D700847CF8 /* LaunchFlowSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */; };
+		3022EBD12FE6D6D700847CF8 /* LaunchDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */; };
+		3022EBD22FE6D6D700847CF8 /* LaunchStagingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC82FE6D6D700847CF8 /* LaunchStagingState.swift */; };
+		3022EBD32FE6D6D700847CF8 /* LaunchSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC72FE6D6D700847CF8 /* LaunchSessionStore.swift */; };
+		3022EBD42FE6D6D700847CF8 /* LaunchFlowResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC52FE6D6D700847CF8 /* LaunchFlowResolver.swift */; };
+		3022EBD52FE6D6D700847CF8 /* CalendarGateEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC02FE6D6D700847CF8 /* CalendarGateEvaluator.swift */; };
+		3022EBD62FE6D6D700847CF8 /* RemoteEntryURLComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCA2FE6D6D700847CF8 /* RemoteEntryURLComposer.swift */; };
+		3022EBD72FE6D6D700847CF8 /* WebDocumentSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBCC2FE6D6D700847CF8 /* WebDocumentSurfaceView.swift */; };
+		3022EBD82FE6D6D700847CF8 /* RemoteEntryProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC92FE6D6D700847CF8 /* RemoteEntryProbe.swift */; };
+		3022EBD92FE6D6D700847CF8 /* LaunchFlowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */; };
+		3022EBDA2FE6D6D700847CF8 /* DeferredLaunchCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */; };
 		30328EE22FDC99E000696F7B /* SplitDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E972FDC99E000696F7B /* SplitDesignSystem.swift */; };
 		30328EE32FDC99E000696F7B /* SplitVisualEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E982FDC99E000696F7B /* SplitVisualEffects.swift */; };
 		30328EE42FDC99E000696F7B /* HomeWidgetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30328E9A2FDC99E000696F7B /* HomeWidgetCard.swift */; };
@@ -66,6 +79,19 @@
 
 /* Begin PBXFileReference section */
 		1A1E5D210905CE408C732137 /* Pods-175SplitWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-175SplitWise.release.xcconfig"; path = "Target Support Files/Pods-175SplitWise/Pods-175SplitWise.release.xcconfig"; sourceTree = "<group>"; };
+		3022EBC02FE6D6D700847CF8 /* CalendarGateEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGateEvaluator.swift; sourceTree = "<group>"; };
+		3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredLaunchCanvas.swift; sourceTree = "<group>"; };
+		3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDestination.swift; sourceTree = "<group>"; };
+		3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowDebugOptions.swift; sourceTree = "<group>"; };
+		3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowLogger.swift; sourceTree = "<group>"; };
+		3022EBC52FE6D6D700847CF8 /* LaunchFlowResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowResolver.swift; sourceTree = "<group>"; };
+		3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowSecrets.swift; sourceTree = "<group>"; };
+		3022EBC72FE6D6D700847CF8 /* LaunchSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSessionStore.swift; sourceTree = "<group>"; };
+		3022EBC82FE6D6D700847CF8 /* LaunchStagingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStagingState.swift; sourceTree = "<group>"; };
+		3022EBC92FE6D6D700847CF8 /* RemoteEntryProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEntryProbe.swift; sourceTree = "<group>"; };
+		3022EBCA2FE6D6D700847CF8 /* RemoteEntryURLComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEntryURLComposer.swift; sourceTree = "<group>"; };
+		3022EBCB2FE6D6D700847CF8 /* RootWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindowPresenter.swift; sourceTree = "<group>"; };
+		3022EBCC2FE6D6D700847CF8 /* WebDocumentSurfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDocumentSurfaceView.swift; sourceTree = "<group>"; };
 		30328E972FDC99E000696F7B /* SplitDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitDesignSystem.swift; sourceTree = "<group>"; };
 		30328E982FDC99E000696F7B /* SplitVisualEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVisualEffects.swift; sourceTree = "<group>"; };
 		30328E9A2FDC99E000696F7B /* HomeWidgetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWidgetCard.swift; sourceTree = "<group>"; };
@@ -138,6 +164,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3022EBCD2FE6D6D700847CF8 /* LaunchFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3022EBC02FE6D6D700847CF8 /* CalendarGateEvaluator.swift */,
+				3022EBC12FE6D6D700847CF8 /* DeferredLaunchCanvas.swift */,
+				3022EBC22FE6D6D700847CF8 /* LaunchDestination.swift */,
+				3022EBC32FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift */,
+				3022EBC42FE6D6D700847CF8 /* LaunchFlowLogger.swift */,
+				3022EBC52FE6D6D700847CF8 /* LaunchFlowResolver.swift */,
+				3022EBC62FE6D6D700847CF8 /* LaunchFlowSecrets.swift */,
+				3022EBC72FE6D6D700847CF8 /* LaunchSessionStore.swift */,
+				3022EBC82FE6D6D700847CF8 /* LaunchStagingState.swift */,
+				3022EBC92FE6D6D700847CF8 /* RemoteEntryProbe.swift */,
+				3022EBCA2FE6D6D700847CF8 /* RemoteEntryURLComposer.swift */,
+				3022EBCB2FE6D6D700847CF8 /* RootWindowPresenter.swift */,
+				3022EBCC2FE6D6D700847CF8 /* WebDocumentSurfaceView.swift */,
+			);
+			path = LaunchFlow;
+			sourceTree = "<group>";
+		};
 		30328E992FDC99E000696F7B /* Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +371,7 @@
 				30328EDE2FDC99E000696F7B /* Main.storyboard */,
 				30328EDF2FDC99E000696F7B /* SceneDelegate.swift */,
 				30328EE02FDC99E000696F7B /* ViewController.swift */,
+				3022EBCD2FE6D6D700847CF8 /* LaunchFlow */,
 			);
 			path = 175SplitWise;
 			sourceTree = "<group>";
@@ -496,6 +543,19 @@
 				30328F022FDC99E000696F7B /* Split.swift in Sources */,
 				30328F032FDC99E000696F7B /* SplitGroup.swift in Sources */,
 				30328F042FDC99E000696F7B /* SplitType.swift in Sources */,
+				3022EBCE2FE6D6D700847CF8 /* RootWindowPresenter.swift in Sources */,
+				3022EBCF2FE6D6D700847CF8 /* LaunchFlowDebugOptions.swift in Sources */,
+				3022EBD02FE6D6D700847CF8 /* LaunchFlowSecrets.swift in Sources */,
+				3022EBD12FE6D6D700847CF8 /* LaunchDestination.swift in Sources */,
+				3022EBD22FE6D6D700847CF8 /* LaunchStagingState.swift in Sources */,
+				3022EBD32FE6D6D700847CF8 /* LaunchSessionStore.swift in Sources */,
+				3022EBD42FE6D6D700847CF8 /* LaunchFlowResolver.swift in Sources */,
+				3022EBD52FE6D6D700847CF8 /* CalendarGateEvaluator.swift in Sources */,
+				3022EBD62FE6D6D700847CF8 /* RemoteEntryURLComposer.swift in Sources */,
+				3022EBD72FE6D6D700847CF8 /* WebDocumentSurfaceView.swift in Sources */,
+				3022EBD82FE6D6D700847CF8 /* RemoteEntryProbe.swift in Sources */,
+				3022EBD92FE6D6D700847CF8 /* LaunchFlowLogger.swift in Sources */,
+				3022EBDA2FE6D6D700847CF8 /* DeferredLaunchCanvas.swift in Sources */,
 				30328F052FDC99E000696F7B /* SplitWiseViewModel.swift in Sources */,
 				30328F062FDC99E000696F7B /* ExpenseFormView.swift in Sources */,
 				30328F072FDC99E000696F7B /* GroupDetailView.swift in Sources */,
@@ -559,7 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mat.p00lb7dg3ts8nc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -597,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mat.p00lb7dg3ts8nc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
