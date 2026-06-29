@@ -1,6 +1,5 @@
 //
 //  LaunchDestination.swift
-//  157Countdown
 //
 
 import Foundation

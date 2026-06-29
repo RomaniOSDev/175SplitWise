@@ -1,6 +1,5 @@
 //
 //  RemoteEntryURLComposer.swift
-//  157Countdown
 //
 
 import Foundation

@@ -1,6 +1,5 @@
 //
 //  RootWindowPresenter.swift
-//  157Countdown
 //
 
 import UIKit

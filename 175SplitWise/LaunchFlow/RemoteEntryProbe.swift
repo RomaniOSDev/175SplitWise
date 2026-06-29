@@ -1,6 +1,5 @@
 //
 //  RemoteEntryProbe.swift
-//  157Countdown
 //
 
 import Foundation

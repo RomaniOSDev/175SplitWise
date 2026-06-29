@@ -1,6 +1,5 @@
 //
 //  CalendarGateEvaluator.swift
-//  157Countdown
 //
 
 import Foundation

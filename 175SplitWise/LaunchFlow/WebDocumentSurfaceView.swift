@@ -1,6 +1,5 @@
 //
 //  WebDocumentSurfaceView.swift
-//  157Countdown
 //
 
 import SwiftUI

@@ -1,6 +1,5 @@
 //
 //  DeferredLaunchCanvas.swift
-//  157Countdown
 //
 
 import SwiftUI
